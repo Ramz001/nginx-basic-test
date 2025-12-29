@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nginx Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Simple cache-busting example -->
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <img src="./assets/img/nginx.png" alt="Nginx Logo" class="logo" />
+        <h1>Nginx is Working</h1>
+        <p class="subtitle">Static assets loaded successfully</p>
+      </header>
+
+      <section class="status">
+        <div class="card">
+          <h2>Server Status</h2>
+          <ul>
+            <li><strong>HTML:</strong> Loaded</li>
+            <li><strong>CSS:</strong> Loaded</li>
+            <li><strong>JS:</strong> <span id="js-status">Pending</span></li>
+            <li><strong>Image:</strong> Loaded</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span id="timestamp">Loading time…</span>
+      </footer>
+    </main>
+
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
